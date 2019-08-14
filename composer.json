@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Sendgrid_Email_Delivery",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "SendGrid is a cloud email service that delivers marketing and transactional emails on behalf of your store. ",
+    "authors": [
+    {
+        "name": "Team RS",
+        "email": "team-rs@sendgrid.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

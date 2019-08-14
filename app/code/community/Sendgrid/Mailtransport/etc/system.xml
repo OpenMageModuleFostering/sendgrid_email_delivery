@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <sendgridconf translate="label">
+            <label>SendGrid Mail Transport</label>
+            <sort_order>150</sort_order>
+        </sendgridconf>
+    </tabs>
+    <sections>
+        <sendgridsettings translate="label" module="adminhtml">
+            <label>Settings</label>
+            <tab>sendgridconf</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment">
+                    <label>SendGrid SMTP Settings</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment><![CDATA[SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable delivery, scalability, and real-time analytics, along with flexible APIs that make custom integration a breeze.<br /> Before to use this plugin, you'll need to create your very own SendGrid account. Go ahead and do so at <a href="http://sendgrid.com/partner/magento" target="_blank">http://sendgrid.com/partner/magento</a>]]></comment>
+                    <expanded>1</expanded>
+                    <fields>
+                        <sendgrid_enabled translate="label comment">
+                            <label>Enable SendGrid SMTP</label>
+                            <comment>Enable send email via SendGrid.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sendgrid_enabled>
+                        <sendgrid_username translate="label comment">
+                            <label>Username</label>
+                            <validate>required-entry</validate>
+                            <comment>SendGrid username.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends>
+                                <sendgrid_enabled>1</sendgrid_enabled>
+                            </depends>
+                        </sendgrid_username>
+                        <sendgrid_password translate="label comment">
+                            <label>Password</label>
+                            <validate>required-entry</validate>
+                            <comment>SendGrid password.</comment>
+                            <frontend_type>password</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends>
+                                <sendgrid_enabled>1</sendgrid_enabled>
+                            </depends>
+                        </sendgrid_password>
+                    </fields>
+                </general>
+            </groups>
+        </sendgridsettings>
+    </sections>
+</config>

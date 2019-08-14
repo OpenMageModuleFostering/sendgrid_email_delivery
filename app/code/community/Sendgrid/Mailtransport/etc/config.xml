@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sendgrid_Mailtransport>
+            <version>0.1.0</version>
+        </Sendgrid_Mailtransport>
+    </modules>
+    <global>
+        <models>
+            <core>
+				<rewrite>
+					<email>Sendgrid_Mailtransport_Model_Email</email>
+					<email_template>Sendgrid_Mailtransport_Model_Email_Template</email_template>
+				</rewrite>
+			</core>
+        </models> 
+        <helpers>
+            <mailtransport>
+                <class>Sendgrid_Mailtransport_Helper</class>
+            </mailtransport>
+        </helpers>
+    </global>
+    <default>
+        <sendgridsettings>
+            <general>
+                <sendgrid_enabled>0</sendgrid_enabled>
+                <sendgrid_username></sendgrid_username>
+                <sendgrid_password></sendgrid_password>
+            </general>
+        </sendgridsettings>
+    </default>
+</config>

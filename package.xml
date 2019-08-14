@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>Sendgrid_Email_Delivery</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>SendGrid is a cloud email service that delivers marketing and transactional emails on behalf of your store. </summary>
+    <description>Easily send marketing and transactional emails from a simple SMTP integration using SendGrid.  Simply set-up your SendGrid account credentials and start sending emails immediately.&#xD;
+&#xD;
+Using SendGrid to power your emails with your Magento store provides you with increased email deliverability ensuring your important marketing and transactional such as receipts, notifications and password confirmations reach the inbox. &#xD;
+&#xD;
+Benefits include increased customer conversion, sales and engagement which will help you drive repeat purchases, reward loyalty and re-engage with those inactive customers.&#xD;
+ &#xD;
+Once you start relaying your emails from your Magento site to SendGrid, you will be able to access the full suite of SendGrid statistics to track important metrics such as bounces, opens, clicks, unsubscribes and more leading to increased customer engagement.&#xD;
+</description>
+    <notes>Provides email sending functionality.</notes>
+    <authors><author><name>Team RS</name><user>team_rs</user><email>team-rs@sendgrid.com</email></author></authors>
+    <date>2014-05-08</date>
+    <time>15:03:32</time>
+    <contents><target name="magecommunity"><dir name="Sendgrid"><dir name="Mailtransport"><dir name="Helper"><file name="Data.php" hash="7c48176d6fa030db6894fd94431c98d7"/></dir><dir name="Model"><dir name="Email"><file name="Template.php" hash="05a75814dd52e9b6c0701d51267c4fdd"/></dir><file name="Email.php" hash="7cfc3c124e034e41d1a833c91eda26e5"/></dir><dir name="etc"><file name="adminhtml.xml" hash="c16624f5ac237d6c3bb5508cfc046990"/><file name="config.xml" hash="2957fef3e6fcaab5c6c98d93089e0510"/><file name="system.xml" hash="43011c7aff342e1107e7c02742b0b4f8"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Sendgrid_Mailtransport.xml" hash="febe453bd232794326f68a7b8cfb7a03"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>5.5.0</max></php></required></dependencies>
+</package>
