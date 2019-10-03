@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Sendgrid_Email_Delivery",
+    "name": "openmage-module-fostering\/sendgrid_email_delivery",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Send emails using SendGrid.",
     "authors": [
