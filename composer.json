@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Sendgrid_Email_Delivery",
+    "name": "OpenMageModuleFostering\/Sendgrid_Email_Delivery",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "Send emails using SendGrid.",
     "authors": [
-    {
-        "name": "SendGrid",
-        "email": "team-rs@sendgrid.com"
-    }
-],
+        {
+            "name": "SendGrid",
+            "email": "team-rs@sendgrid.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
